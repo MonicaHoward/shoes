@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
+
+.product-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    margin: 0 auto;  
+    font-family: 'Spartan', sans-serif;  
+}
+.product{
+    border: 2px solid darkgray;
+}
+.product:hover {
+    border: 2px solid black;
+}
+.productImage{
+    background: url("http://via.placeholder.com/250");
+    background-size: cover;
+    height: 250px;
+    width: 250px;
+}
