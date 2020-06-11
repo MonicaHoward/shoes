@@ -13,12 +13,12 @@ const ProductGallery = () => {
     //     "favorite_border"
 
     return(
-        <div>
-            <h1>From Product Gallery</h1>
+        <div className="gallery-view">
+            <h5 className="category">New Releases</h5>
             <div className="product-grid">
             {state.products.map(product => (
                 <div 
-                    className="product"
+                    className="product hoverable"
                     key={product.id}
                 >
                 <div className="productImage">
@@ -32,10 +32,11 @@ const ProductGallery = () => {
                    
                 >favorite_border
                 </i>
+                <img className="product-img" src={product.img} />
                 </div>
 
-                   <h5>{product.productName}</h5>
-                   <h5>$ {product.originalPrice}</h5>
+                   <h6 className="product-info">{product.productName}</h6>
+                   <h6 className="product-info">$ {product.originalPrice}</h6>
                    <button className="waves-effect waves-light btn quick-buy"                         
                    ><i className="material-icons left">monetization_on</i>QUICK BUY</button>  
                    

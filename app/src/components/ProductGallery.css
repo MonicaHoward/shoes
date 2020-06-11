@@ -3,27 +3,42 @@
 a {
     color: #000;
 }
+.gallery-view{
+    margin: 5%;
+}
+.category{
+    text-align: left
+}
 .product-grid{
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 1px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 2;
+    grid-column-gap: 1px;
+    grid-row-gap: 10px;
+
     margin: 0 auto;  
     font-family: 'Spartan', sans-serif;  
 }
 .product{
-    border: 2px solid darkgray;
+    border: 2px solid #fdfdfb;
     text-align: left;
 }
-.product:hover {
-    border: 2px solid black;
+.product-info{
+    color: #000;
+    margin: 5%; 
 }
-.productImage{
+.product:hover {
+    border: 1px solid black;
+}
+.product-img{
+    width: 250px;
+}
+/* .productImage{
     background: url("http://via.placeholder.com/250");
     background-size: cover;
  height: 250px;
     width: 250px; 
-}
+} */
 .favs{
     text-align: right;
     color: gray;
