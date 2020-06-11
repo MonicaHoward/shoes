@@ -13,7 +13,10 @@ const reducer = (state, action) => {
                 ...state,
                 products: addToFavs
             }
-        
+        case "VIEW_PRODUCT" :
+            return{
+                
+            }
 
         default: 
             return state;

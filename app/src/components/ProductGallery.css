@@ -51,6 +51,9 @@ a {
     color: #fff;
     margin: 5%;
 }
+.quick-buy-link{
+    color: #FFF;
+}
 .quick-buy:hover{
     background: maroon;
 }

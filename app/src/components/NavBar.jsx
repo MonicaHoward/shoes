@@ -21,7 +21,7 @@ const NavBar = () => {
 </div>
 </nav>
                     </li>
-                        <li style={{color: "#000"}}><a style={{color: "#000"}}href="/shop">shop</a></li>
+                        <li style={{color: "#000"}}><a style={{color: "#000"}} href="/shop">shop</a></li>
 
                         <li><a href="/favs"><i className="material-icons left" style={{color: "#000"}}>favorite_border</i></a></li>
 

@@ -7,6 +7,9 @@ import NavBar from './components/NavBar';
 import ProductGallery from './components/ProductGallery';
 import ProductPage from './components/ProductPage';
 import Hero from './components/Hero'
+import Favs from './components/Favs'
+import Cart from './components/Cart'
+
 
 import InventoryContext from './context';
 import productsReducer from './reducer';
@@ -39,6 +42,8 @@ function App() {
         <Route path="/" exact component={Hero} />
         <Route path="/home" component={Hero} />
         <Route path="/shop"  component={ProductGallery} />
+        <Route path="/favs"  component={Favs} />
+        <Route path="/cart"  component={Cart} />
         </Switch>
        
         </InventoryContext.Provider>

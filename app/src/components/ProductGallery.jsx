@@ -20,6 +20,10 @@ const ProductGallery = () => {
                 <div 
                     className="product hoverable"
                     key={product.id}
+                    onClick={() => dispatch({
+                        type: "VIEW_PROUDCT",
+                        payload: product
+                    })}
                 >
                 <div className="productImage">
                 <i 
@@ -38,7 +42,8 @@ const ProductGallery = () => {
                    <h6 className="product-info">{product.productName}</h6>
                    <h6 className="product-info">$ {product.originalPrice}</h6>
                    <button className="waves-effect waves-light btn quick-buy"                         
-                   ><i className="material-icons left">monetization_on</i>QUICK BUY</button>  
+                   ><a className="quick-buy-link" href="/cart">
+                   <i className="material-icons left">monetization_on</i>QUICK BUY</a></button>  
                    
                 </div>
            ))}
