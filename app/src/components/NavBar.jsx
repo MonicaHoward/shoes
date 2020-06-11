@@ -4,18 +4,18 @@ const NavBar = () => {
     return(
         <div>
             <nav>
-                <div class="nav-wrapper" style={{background: "#fff"}}>
+                <div className="nav-wrapper" style={{background: "#fff"}}>
                      <a href="/" className="brand-logo left" style={{color: "#000"}}>FOOTWERX</a>
                      
-                    <ul id="nav-mobile" class="right hide-on-med-and-down" style={{color: "#000"}}>
+                    <ul id="nav-mobile" className="right hide-on-med-and-down" style={{color: "#000"}}>
                     <li>
                     <nav style={{background: "#000", color: "#fff", width: "90%"}}>
-<div class="nav-wrapper">
+<div className="nav-wrapper">
  <form>
-   <div class="input-field">
+   <div className="input-field">
      <input id="search" type="search" required />
-     <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-     <i class="material-icons">close</i>
+     <label className="label-icon" htmlFor="search"><i className="material-icons">search</i></label>
+     <i className="material-icons">close</i>
    </div>
  </form>
 </div>
