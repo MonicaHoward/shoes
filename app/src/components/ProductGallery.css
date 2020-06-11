@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap');
 
+a {
+    color: #000;
+}
 .product-grid{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -10,6 +13,7 @@
 }
 .product{
     border: 2px solid darkgray;
+    text-align: left;
 }
 .product:hover {
     border: 2px solid black;
@@ -17,6 +21,21 @@
 .productImage{
     background: url("http://via.placeholder.com/250");
     background-size: cover;
-    height: 250px;
-    width: 250px;
+ height: 250px;
+    width: 250px; 
+}
+.favs{
+    text-align: right;
+    color: gray;
+}
+.favs:hover{
+    color: maroon;
+}
+.quick-buy{
+    background: #000;
+    color: #fff;
+    margin: 5%;
+}
+.quick-buy:hover{
+    background: maroon;
 }
