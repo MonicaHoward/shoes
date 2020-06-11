@@ -6,7 +6,7 @@ const InventoryContext = React.createContext({
         id: 1,
         img: "https://cdn2.basket4ballers.com/86952-large_default/nike-kyrie-6-cncpts-pink-tint-guava-ice-cu8879-600.jpg",
         serialNumber: "CU8879600",
-        productName: "Nike Kyrie 6 Cncpts",
+        productName: "Nike Kyrie 6 Cncpts | Pre-Release",
         productDescription: "Premium, luxury footwear lorem ipsum",
         originalPrice: 129,
         inFavs: false
@@ -47,7 +47,7 @@ const InventoryContext = React.createContext({
         id: 5,
         img: "https://cdn1.basket4ballers.com/92879-large_default/harden-vol-4-gca-fw7498.jpg",
         serialNumber: "1122334455",
-        productName: "Harden Vol. 4G",
+        productName: "Harden Vol. 4G x Addidas",
         productDescription: "Premium, luxury footwear lorem ipsum",
         originalPrice: 129,
         inFavs: false

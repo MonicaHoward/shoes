@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import InventoryContext from '../context';
 import  './ProductGallery.css';
 
@@ -7,34 +7,36 @@ import  './ProductGallery.css';
 const ProductGallery = () => {
     const { state, dispatch } = useContext(InventoryContext);
 
+    const [myFav, setFav] = (useState(false))
+
+    const toggleFavs = () => {
+        setFav(!myFav)
+    }
+    
+
     // const favState = state.products.inFavs === true 
-    //     ? "favorite"
+    //     ? `favorite`
     //     :
-    //     "favorite_border"
+    //     `favorite_border`;
+
+    //     console.log(favState)
 
     return(
         <div className="gallery-view">
             <h5 className="category">New Releases</h5>
             <div className="product-grid">
-            {state.products.map(product => (
+            {state.products.map((product) => (
                 <div 
                     className="product hoverable"
-                    key={product.id}
-                    onClick={() => dispatch({
-                        type: "VIEW_PROUDCT",
-                        payload: product
-                    })}
+                    key={product.productName}
+                    
                 >
                 <div className="productImage">
                 <i 
                     className="small material-icons favs"
-                    onClick={() => dispatch({ type: 'ADD_TO_FAVS', payload: product })}
-                        // style={{ 
-                        //     textDecoration: `${product.inFavs && "line-through"}`
-                            
-                        // }}
+                    onClick={toggleFavs}
                    
-                >favorite_border
+                >{myFav ? `favorite`: `favorite_border`}
                 </i>
                 <img className="product-img" src={product.img} />
                 </div>
